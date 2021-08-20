@@ -1,0 +1,106 @@
+.searchingFor {
+  margin: 50px 0 50px;
+}
+h1,
+p,
+.additionalInfo {
+  font-family: "Annie Use Your Telescope", cursive;
+  color: #474c5c;
+  text-align: center;
+}
+ul {
+  list-style-type: none;
+}
+h1 {
+  font-size: 60px;
+  margin-top: 20px;
+}
+p {
+  line-height: 30px;
+  font-size: 50px;
+  margin-bottom: 0px;
+}
+.conversion {
+  font-size: 15px;
+  position: relative;
+  left: 150px;
+  bottom: 30px;
+  color: #474c5c;
+  margin-bottom: 0px;
+}
+.celsius {
+  text-decoration: none;
+  color: #474c5c;
+}
+.description {
+  text-transform: capitalize;
+}
+:hover .celsius,
+:hover .fahrenheit {
+  cursor: pointer;
+}
+.additionalInfo {
+  font-size: 25px;
+}
+.searched {
+  width: 300px;
+  margin-bottom: 10px;
+}
+
+.date {
+  text-align: center;
+  font-family: "Annie Use Your Telescope", cursive;
+  font-size: 25px;
+  position: relative;
+  left: 20px;
+}
+
+.days {
+  font-family: "Amatic SC", cursive;
+  font-size: 25px;
+  color: #474c5c;
+  text-align: center;
+}
+.days:hover {
+  font-size: 50px;
+}
+img {
+  width: 75px;
+}
+main {
+  background: #fff;
+  padding: 30px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+main,
+main::before,
+main::after {
+  /* Styles to distinguish sheets from one another */
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+  border: 1px solid #bbb;
+}
+
+main::before,
+main::after {
+  content: "";
+  position: absolute;
+  height: 95%;
+  width: 99%;
+  background-color: #eee;
+}
+
+main::before {
+  right: 15px;
+  top: 0;
+  transform: rotate(-1deg);
+  z-index: -1;
+}
+
+main::after {
+  top: 5px;
+  right: -5px;
+  transform: rotate(1deg);
+  z-index: -2;
+}
