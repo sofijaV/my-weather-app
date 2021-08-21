@@ -67,6 +67,15 @@ p {
 img {
   width: 75px;
 }
+.link {
+  font-size: 20px;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  cursor: pointer;
+}
 main {
   background: #fff;
   padding: 30px;
