@@ -23,7 +23,7 @@ p {
 .conversion {
   font-size: 15px;
   position: relative;
-  left: 150px;
+  left: 180px;
   bottom: 30px;
   color: #474c5c;
   margin-bottom: 0px;
@@ -41,6 +41,9 @@ p {
 }
 .additionalInfo {
   font-size: 25px;
+  margin: 0px;
+  margin-bottom: 20px;
+  padding: 0px;
 }
 .searched {
   max-width: 200px;
@@ -62,7 +65,7 @@ p {
   text-align: center;
 }
 .days:hover {
-  font-size: 50px;
+  font-size: 32px;
 }
 img {
   width: 75px;
@@ -83,8 +86,12 @@ a:hover {
 main {
   background: #fff;
   padding: 30px;
-  margin-bottom: 30px;
+  margin: 0 auto;
   position: relative;
+}
+.document {
+  max-width: 700px;
+  margin: 0 auto;
 }
 
 main,
