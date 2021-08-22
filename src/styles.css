@@ -1,5 +1,6 @@
 .searchingFor {
-  margin: 50px 0 50px;
+  margin: 0px 0 50px;
+  border-style: ;
 }
 h1,
 p,
@@ -84,6 +85,14 @@ a {
 }
 a:hover {
   cursor: pointer;
+}
+.roof {
+  display: inline;
+  width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  top: 50px;
+  color: #ffc107;
 }
 main {
   background: #fff;
