@@ -26,7 +26,7 @@ ${hour}:${minute}`;
 function showData(response) {
   console.log(response);
   let city = response.data.name;
-  let searchedCity = document.querySelector("h1");
+  let searchedCity = document.querySelector("#searched-city");
   searchedCity.innerHTML = city;
   let temperature = Math.round(response.data.main.temp);
   let searchedTemperature = document.querySelector("#current-temp");
@@ -34,7 +34,7 @@ function showData(response) {
   let min = Math.round(response.data.main.temp_min);
   let max = Math.round(response.data.main.temp_max);
   let minMax = document.querySelector("#min-max");
-  minMax.innerHTML = `${min}°c | ${max}°c`;
+  minMax.innerHTML = `High ${max}° | Low ${min}°`;
   let humidity = response.data.main.humidity;
   let searchedHumidity = document.querySelector("#humidity");
   searchedHumidity.innerHTML = `Humidity: ${humidity}%`;
