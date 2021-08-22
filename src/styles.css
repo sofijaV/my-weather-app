@@ -23,12 +23,13 @@ p {
 .conversion {
   font-size: 15px;
   position: relative;
-  left: 180px;
-  bottom: 30px;
+  left: 175px;
+  bottom: 35px;
   color: #474c5c;
   margin-bottom: 0px;
 }
-.celsius {
+.celsius,
+.fahrenheit {
   text-decoration: none;
   color: #474c5c;
 }
