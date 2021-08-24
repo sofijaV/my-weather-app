@@ -23,112 +23,127 @@
   <body>
     <div class="container">
       <div class="document">
-                
-              
-                <form class="searchingFor" id="searching">
-                <div class="row">
-              <div class="col-2"></div>
-                <div class="col-4">
-            <input
-              type="text"
-              placeholder="Enter city name"
-              autocomplete="off"
-              autofocus="on"
-              id="typed-city"
-              class="typed"
-            />
-                </div>
-            <div class="col-2">
-            <button
-              type="submit"
-              class="btn btn-outline-secondary"
-              class="search"
-              id ="search-button"
-            >
-              Search
-            </button>
+        <form class="searchingFor" id="searching">
+          <div class="row">
+            <div class="col-2"></div>
+            <div class="col-4">
+              <input
+                type="text"
+                placeholder="Enter city name"
+                autocomplete="off"
+                autofocus="on"
+                id="typed-city"
+                class="typed"
+              />
             </div>
             <div class="col-2">
-             <button id="location" type="button" 
-              class="btn btn-outline-warning"  class="location">
-        Here
-        </button>
-        </div>
-              </div>
+              <button
+                type="submit"
+                class="btn btn-outline-secondary"
+                class="search"
+                id="search-button"
+              >
+                Search
+              </button>
+            </div>
+            <div class="col-2">
+              <button
+                id="location"
+                type="button"
+                class="btn btn-outline-warning"
+                class="location"
+              >
+                Here
+              </button>
+            </div>
+          </div>
         </form>
-       
-      <main>
-      <div class="row">
-      
-        <div class="col-6">
-            <h1><span id="searched-city">Belgrade</span>
-            <span id=current-temp>30</span>
-            <span class="conversion" >
-             <a href="#" class="celsius" id="celsius">°C</a>|<a href="#" class="fahrenheit" id="fahrenheit">°F</a>
-              </span>
-              </h1> 
-             <ul class="additionalInfo">
-                 <li class="description" id="description"> Raining </li> 
-               <li id="min-max">High  <strong>36°</strong> | Low 25°</li>
-               <li><span id="humidity">Humidity: 50%  </span><span id="wind"> Wind speed: 2 m/s</span></li>
-             </ul>
-          </div>
-        <div class="col-3">
-          <img src="images/rain.png" class="searched" alt="raining" />
-        </div>
-          <div class="col-3">
-            <div  class="date" id="current" >
-        
-        </div>
-        </div>
-      </div>
-      <div class="days">
-        <div class="row">
-          <div class="col-1"></div>
-          <div class="col-2">Monday</div>
-          <div class="col-2">Tuesday</div>
-          <div class="col-2">Wednesday</div>
-          <div class="col-2">Thursday</div>
-          <div class="col-2">Friday</div>
-          <div class="col-1"></div>
-          </div>
+
+        <main>
           <div class="row">
-        <div class="col-1"></div>
-            <div class="col-2" >
-              <img src="images/sun.png" alt="sun"/> 
+            <div class="col-6">
+              <h1>
+                <span id="searched-city">Belgrade</span>
+                <span id="current-temp">30</span>
+                <span class="conversion">
+                  <a href="#" class="celsius" id="celsius">°C</a>|<a
+                    href="#"
+                    class="fahrenheit"
+                    id="fahrenheit"
+                    >°F</a
+                  >
+                </span>
+              </h1>
+              <ul class="additionalInfo">
+                <li class="description" id="description">Raining</li>
+                <li id="min-max">High <strong>36°</strong> | Low 25°</li>
+                <li>
+                  <span id="humidity">Humidity: 50% </span
+                  ><span id="wind"> Wind speed: 2 m/s</span>
+                </li>
+              </ul>
             </div>
-            <div class="col-2">
-              <img src="images/rain.png" alt="rain" />
+            <div class="col-3">
+              <img
+                src="images/rain.png"
+                class="searched"
+                alt="raining"
+                id="icon"
+              />
             </div>
-            <div class="col-2">
-              <img src="images/sun.png" alt="sun" />
+            <div class="col-3">
+              <div class="date" id="current"></div>
             </div>
-            <div class="col-2">
-              <img src="images/thunder-and-rain.png" alt="thunder" />
             </div>
-            <div class="col-2">
-              <img src="images/sun.png" alt="sun" /> 
+            <div class="days">
+              <div class="row">
+                <div class="col-1"></div>
+                <div class="col-2">Monday</div>
+                <div class="col-2">Tuesday</div>
+                <div class="col-2">Wednesday</div>
+                <div class="col-2">Thursday</div>
+                <div class="col-2">Friday</div>
+                <div class="col-1"></div>
+              </div>
+              <div class="row">
+                <div class="col-1"></div>
+                <div class="col-2">
+                  <img src="images/sun.png" alt="sun" />
+                </div>
+                <div class="col-2">
+                  <img src="images/rain.png" alt="rain" />
+                </div>
+                <div class="col-2">
+                  <img src="images/sun.png" alt="sun" />
+                </div>
+                <div class="col-2">
+                  <img src="images/thunder-and-rain.png" alt="thunder" />
+                </div>
+                <div class="col-2">
+                  <img src="images/sun.png" alt="sun" />
+                </div>
+                <div class="col-1"></div>
+              </div>
+              <div class="row">
+                <div class="col-1"></div>
+                <div class="col-2"><strong>29°</strong> | 15°</div>
+                <div class="col-2"><strong>29°</strong> | 15°</div>
+                <div class="col-2"><strong>29°</strong>| 16°</div>
+                <div class="col-2"><strong>29°</strong> | 14°</div>
+                <div class="col-2"><strong>29°</strong>| 14°</div>
+                <div class="col-1"></div>
+              </div>
             </div>
-            <div class="col-1"></div>
           </div>
-          <div class="row">
-            <div class="col-1"></div>
-            <div class="col-2"><strong>29°</strong> | 15° </div>
-            <div class="col-2"><strong>29°</strong> | 15° </div>
-            <div class="col-2"><strong>29°</strong>| 16° </div>
-            <div class="col-2"><strong>29°</strong> | 14° </div>
-            <div class="col-2"><strong>29°</strong>| 14° </div>
-            <div class="col-1"></div>
-          </div>
-        </div>
-      </div>
+        </main>
         <div class="link">
-        <a href="https://github.com/sofijaV/my-weather-app" target="_blank">Open-source code</a> by Sofija
-      </div>
-      </main>
+          <a href="https://github.com/sofijaV/my-weather-app" target="_blank"
+            >Open-source code</a
+          >
+          by Sofija
+        </div>
       </div>
     </div>
-    <script src="src/index.js">
-    </script>
+    <script src="src/index.js"></script>
   </body>
 </html>
