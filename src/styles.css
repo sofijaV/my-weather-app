@@ -29,19 +29,14 @@ p {
   position: relative;
   right: 20px;
   bottom: 30px;
-}
-.celsius,
-.fahrenheit {
   text-decoration: none;
   color: #474c5c;
 }
+
 .description {
   text-transform: capitalize;
 }
-:hover .celsius,
-:hover .fahrenheit {
-  cursor: pointer;
-}
+
 .additionalInfo {
   font-size: 25px;
   margin: 0px;
