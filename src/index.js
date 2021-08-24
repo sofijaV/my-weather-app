@@ -29,7 +29,6 @@ function showData(response) {
   let city = response.data.name;
   let searchedCity = document.querySelector("#searched-city");
   searchedCity.innerHTML = city;
-
   let searchedTemperature = document.querySelector("#current-temp");
   searchedTemperature.innerHTML = celsiusTemperature;
   let min = Math.round(response.data.main.temp_min);
@@ -52,6 +51,7 @@ function showData(response) {
   );
   icon.setAttribute("alt", response.data.weather[0].description);
 }
+
 function convertFahrenheit(event) {
   event.preventDefault();
   let sign = document.querySelector("#fahrenheit");
@@ -103,3 +103,4 @@ let typed = document.querySelector("#searching");
 typed.addEventListener("submit", getData);
 let here = document.querySelector("#location");
 here.addEventListener("click", getPosition);
+showPosition();

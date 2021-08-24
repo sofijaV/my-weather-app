@@ -44,8 +44,11 @@ p {
   padding: 0px;
 }
 .searched {
-  width: 100px;
+  width: 200px;
   margin-top: 40px;
+  border: 5px solid #ffe3b0;
+  border-radius: 10px;
+  transform: skew(0deg, 8deg);
 }
 .date {
   text-align: left;
