@@ -54,12 +54,20 @@ function showData(response) {
 }
 function convertFahrenheit(event) {
   event.preventDefault();
+  let sign = document.querySelector("#fahrenheit");
+  sign.setAttribute("class", "active");
+  let celsius = document.querySelector("#celsius");
+  celsius.setAttribute("class", null);
   let temperature = document.querySelector("#current-temp");
   let fahrenheitTemp = Math.round((celsiusTemperature * 9) / 5 + 32);
   temperature.innerHTML = fahrenheitTemp;
 }
 function convertCelsius(event) {
   event.preventDefault();
+  let sign = document.querySelector("#fahrenheit");
+  sign.setAttribute("class", null);
+  let celsius = document.querySelector("#celsius");
+  celsius.setAttribute("class", "active");
   let temperature = document.querySelector("#current-temp");
   temperature.innerHTML = celsiusTemperature;
 }

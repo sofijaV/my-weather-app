@@ -78,7 +78,13 @@ a {
   text-decoration: none;
 }
 a:hover {
-  cursor: pointer;
+  cursor: default;
+}
+.active {
+  color: #474c5c;
+}
+.active:hover {
+  color: #474c5c;
 }
 
 main {
