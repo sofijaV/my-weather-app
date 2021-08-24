@@ -25,12 +25,13 @@ ${hour}:${minute}`;
 
 function showData(response) {
   console.log(response);
+  celsiusTemperature = Math.round(response.data.main.temp);
   let city = response.data.name;
   let searchedCity = document.querySelector("#searched-city");
   searchedCity.innerHTML = city;
-  let temperature = Math.round(response.data.main.temp);
+
   let searchedTemperature = document.querySelector("#current-temp");
-  searchedTemperature.innerHTML = temperature;
+  searchedTemperature.innerHTML = celsiusTemperature;
   let min = Math.round(response.data.main.temp_min);
   let max = Math.round(response.data.main.temp_max);
   let minMax = document.querySelector("#min-max");
@@ -51,7 +52,17 @@ function showData(response) {
   );
   icon.setAttribute("alt", response.data.weather[0].description);
 }
-
+function convertFahrenheit(event) {
+  event.preventDefault();
+  let temperature = document.querySelector("#current-temp");
+  let fahrenheitTemp = Math.round((celsiusTemperature * 9) / 5 + 32);
+  temperature.innerHTML = fahrenheitTemp;
+}
+function convertCelsius(event) {
+  event.preventDefault();
+  let temperature = document.querySelector("#current-temp");
+  temperature.innerHTML = celsiusTemperature;
+}
 function getData(event) {
   event.preventDefault();
   let key = "6c8c6f63dce062a0b5a3b082e9b52d3a";
@@ -73,7 +84,12 @@ function showPosition(position) {
 function getPosition(event) {
   navigator.geolocation.getCurrentPosition(showPosition);
 }
+celsiusTemperature = null;
 
+let selectedFahrenheit = document.querySelector("#fahrenheit");
+selectedFahrenheit.addEventListener("click", convertFahrenheit);
+let selectedCelsius = document.querySelector("#celsius");
+selectedCelsius.addEventListener("click", convertCelsius);
 currentTime();
 let typed = document.querySelector("#searching");
 typed.addEventListener("submit", getData);

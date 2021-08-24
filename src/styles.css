@@ -49,7 +49,8 @@ p {
   padding: 0px;
 }
 .searched {
-  width: 150px;
+  width: 100px;
+  margin-top: 40px;
 }
 .date {
   text-align: left;
