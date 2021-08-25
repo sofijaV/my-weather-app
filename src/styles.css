@@ -44,16 +44,21 @@ p {
   padding: 0px;
 }
 .searched {
-  width: 200px;
+  width: 90px;
   margin-top: 40px;
-  border: 5px solid #ffe3b0;
-  border-radius: 10px;
-  transform: skew(0deg, 8deg);
+  position: relative;
+  bottom: 180px;
+  left: 70px;
+  transform: skew(5deg, 0deg);
+}
+.note {
+  width: 200px;
+  filter: brightness(105%) sepia(60%);
 }
 .date {
   text-align: left;
   font-family: "Annie Use Your Telescope", cursive;
-  font-size: 25px;
+  font-size: 20px;
   position: relative;
   left: 20px;
 }

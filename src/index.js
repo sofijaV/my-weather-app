@@ -103,4 +103,3 @@ let typed = document.querySelector("#searching");
 typed.addEventListener("submit", getData);
 let here = document.querySelector("#location");
 here.addEventListener("click", getPosition);
-showPosition();
