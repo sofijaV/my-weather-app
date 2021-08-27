@@ -72,6 +72,13 @@ p {
 .days:hover {
   font-size: 32px;
 }
+.max {
+  color: black;
+}
+.min {
+  color: black;
+  opacity: 0.5;
+}
 img {
   width: 75px;
 }
