@@ -124,10 +124,12 @@ function convertCelsius(event) {
 }
 function getData(event) {
   event.preventDefault();
+  let searched = document.querySelector("#typed-city");
+  search(searched.value);
+}
+function search(city) {
   let key = "6c8c6f63dce062a0b5a3b082e9b52d3a";
   let units = "metric";
-  let searched = document.querySelector("#typed-city");
-  let city = searched.value;
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${key}&&units=metric`;
   axios.get(apiUrl).then(showData);
 }
@@ -151,6 +153,7 @@ selectedFahrenheit.addEventListener("click", convertFahrenheit);
 let selectedCelsius = document.querySelector("#celsius");
 selectedCelsius.addEventListener("click", convertCelsius);
 currentTime();
+search("Belgrade");
 let typed = document.querySelector("#searching");
 typed.addEventListener("submit", getData);
 let here = document.querySelector("#location");
