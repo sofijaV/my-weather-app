@@ -35,6 +35,7 @@ p {
 
 .description {
   text-transform: capitalize;
+  color: #fecd51;
 }
 
 .additionalInfo {
@@ -73,11 +74,14 @@ p {
   font-size: 32px;
 }
 .max {
-  color: black;
+  color: #474c5c;
 }
 .min {
   color: black;
   opacity: 0.5;
+}
+.value {
+  color: #fecd51;
 }
 img {
   width: 75px;

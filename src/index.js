@@ -38,7 +38,6 @@ function formatDay(timestamp) {
 }
 
 function displayForecast(response) {
-  console.log(response);
   let forecastHTML = `<div class="row">
   <div class="col-1"></div>`;
   let forecast = response.data.daily;
@@ -68,7 +67,6 @@ function displayForecast(response) {
 }
 
 function getForecast(coordinates) {
-  console.log(coordinates);
   let lon = coordinates.lon;
   let lat = coordinates.lat;
   apiKey = "6c8c6f63dce062a0b5a3b082e9b52d3a";
@@ -77,7 +75,6 @@ function getForecast(coordinates) {
 }
 
 function showData(response) {
-  console.log(response);
   celsiusTemperature = Math.round(response.data.main.temp);
   let city = response.data.name;
   let searchedCity = document.querySelector("#searched-city");
@@ -87,16 +84,16 @@ function showData(response) {
   let min = Math.round(response.data.main.temp_min);
   let max = Math.round(response.data.main.temp_max);
   let minMax = document.querySelector("#min-max");
-  minMax.innerHTML = `High ${max}° | Low ${min}°`;
+  minMax.innerHTML = `High <span class="max">${max}° </span> | Low <span class="min">${min}°</span>`;
   let humidity = response.data.main.humidity;
   let searchedHumidity = document.querySelector("#humidity");
-  searchedHumidity.innerHTML = `Humidity: ${humidity}%`;
+  searchedHumidity.innerHTML = `Humidity:<span class="value"> ${humidity}%</span>`;
   let description = response.data.weather[0].description;
   let searchedDescription = document.querySelector("#description");
   searchedDescription.innerHTML = description;
   let windSpeed = Math.round(response.data.wind.speed);
   let searchedWind = document.querySelector("#wind");
-  searchedWind.innerHTML = `Wind speed: ${windSpeed}m/s`;
+  searchedWind.innerHTML = `Wind speed: <span class="value">${windSpeed}m/s</span>`;
   let icon = document.querySelector("#icon");
   icon.setAttribute(
     "src",
@@ -136,7 +133,6 @@ function getData(event) {
 }
 
 function showPosition(position) {
-  console.log(position);
   let lat = position.coords.latitude;
   let lon = position.coords.longitude;
   let key = "6c8c6f63dce062a0b5a3b082e9b52d3a";
