@@ -92,6 +92,24 @@ function showPosition(position) {
 function getPosition(event) {
   navigator.geolocation.getCurrentPosition(showPosition);
 }
+function displayForcast() {
+  let forecastHTML = `<div class="row">`;
+  let days = ["Thuesday", "Friday", "Saturday"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+                <div class="col-2"><div class="day">${day}</div>
+                  <img src="images/sun.png" alt="sun" />
+                 <span class="max">29°</span>|<span class="min">15°</span>
+                 </div>
+                `;
+  });
+  forecastHTML = forecastHTML + `</div>`;
+
+  let forecastElement = document.querySelector("#forcast");
+  forecastElement.innerHTML = forecastHTML;
+}
 celsiusTemperature = null;
 
 let selectedFahrenheit = document.querySelector("#fahrenheit");
@@ -103,3 +121,5 @@ let typed = document.querySelector("#searching");
 typed.addEventListener("submit", getData);
 let here = document.querySelector("#location");
 here.addEventListener("click", getPosition);
+
+displayForcast();
