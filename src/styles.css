@@ -21,23 +21,14 @@ p {
   margin-bottom: 0px;
 }
 
-.conversion {
-  font-size: 15px;
-  font-family: monospace;
-  color: #474c5c;
-  margin-bottom: 0px;
-  position: relative;
-  right: 20px;
-  bottom: 30px;
-  text-decoration: none;
-  color: #474c5c;
-}
-
 .description {
   text-transform: capitalize;
-  color: #fecd51;
 }
-
+.celsius {
+  font-size: 30px;
+  position: relative;
+  bottom: 15px;
+}
 .additionalInfo {
   font-size: 25px;
   margin: 0px;
@@ -73,6 +64,9 @@ p {
 .days:hover {
   font-size: 32px;
   background-color: #fffff0;
+  border: 1px solid rgba(71, 76, 92, 0.4);
+  border-radius: 13px;
+  box-shadow: 5px 6px 9px rgba(71, 76, 92, 0.2);
 }
 .max {
   color: #474c5c;
@@ -81,9 +75,7 @@ p {
   color: black;
   opacity: 0.5;
 }
-.value {
-  color: #fecd51;
-}
+
 img {
   width: 75px;
 }
@@ -100,18 +92,18 @@ a {
 a:hover {
   cursor: default;
 }
-.active {
-  color: #474c5c;
-}
-.active:hover {
-  color: #474c5c;
-}
 
 main {
   background: #fff;
   padding: 30px;
   margin: 0 auto;
   position: relative;
+}
+.getLink {
+  color: #ffdfc5;
+}
+.getLink:hover {
+  color: #474c5c;
 }
 .document {
   max-width: 700px;

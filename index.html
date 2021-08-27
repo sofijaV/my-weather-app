@@ -21,8 +21,10 @@
     <title>Weather Forcast</title>
   </head>
   <body>
+      <div class="background">
     <div class="container">
       <div class="document">
+      
         <form class="searchingFor" id="searching">
           <div class="row">
             <div class="col-2"></div>
@@ -50,7 +52,7 @@
               <button
                 id="location"
                 type="button"
-                class="btn btn-outline-warning"
+                class="btn btn-outline-secondary"
                 class="location"
               >
                 Here
@@ -67,20 +69,13 @@
           
               <h1>
                 <span id="searched-city">Belgrade</span>
-                <span id="current-temp">30</span>
-                <span class="conversion">
-                  <a href="#" class="active" id="celsius">°C</a>|<a
-                    href="#"
-                    id="fahrenheit"
-                    >°F</a
-                  >
-                </span>
+                <span id="current-temp">30</span><span class="celsius">°</span>
               </h1>
               <ul class="additionalInfo">
                 <li class="description" id="description">Clear Sky</li>
                 <li id="min-max">High <span class="max">36°</span> | Low <span class="min">25°</span></li>
                 <li>
-                  <span id="humidity">Humidity: <span class="value">50%</span> </span>
+                  <span id="humidity">Humidity: <span class="value" id=>50%</span> </span>
                   <span id="wind"> Wind speed: <span class="value">2 m/s</span></span>
                 </li>
               </ul>
@@ -88,7 +83,7 @@
             <div class="col-3">
               <img src="images/note.png" class="note" alt="note"/>
               <img
-                src="images/sun.png"
+                src="#"
                 class="searched"
                 alt="sunshine"
                 id="icon"
@@ -100,8 +95,9 @@
             </div>
           </div>
         </main>
+        </div>
         <div class="link">
-          <a href="https://github.com/sofijaV/my-weather-app" target="_blank"
+          <a href="https://github.com/sofijaV/my-weather-app" class="getLink" target="_blank"
             >Open-source code</a
           >
           by Sofija

@@ -98,25 +98,6 @@ function showData(response) {
   getForecast(response.data.coord);
 }
 
-function convertFahrenheit(event) {
-  event.preventDefault();
-  let sign = document.querySelector("#fahrenheit");
-  sign.setAttribute("class", "active");
-  let celsius = document.querySelector("#celsius");
-  celsius.setAttribute("class", null);
-  let temperature = document.querySelector("#current-temp");
-  let fahrenheitTemp = Math.round((celsiusTemperature * 9) / 5 + 32);
-  temperature.innerHTML = fahrenheitTemp;
-}
-function convertCelsius(event) {
-  event.preventDefault();
-  let sign = document.querySelector("#fahrenheit");
-  sign.setAttribute("class", null);
-  let celsius = document.querySelector("#celsius");
-  celsius.setAttribute("class", "active");
-  let temperature = document.querySelector("#current-temp");
-  temperature.innerHTML = celsiusTemperature;
-}
 function getData(event) {
   event.preventDefault();
   let searched = document.querySelector("#typed-city");
@@ -141,12 +122,6 @@ function getPosition(event) {
   navigator.geolocation.getCurrentPosition(showPosition);
 }
 
-celsiusTemperature = null;
-
-let selectedFahrenheit = document.querySelector("#fahrenheit");
-selectedFahrenheit.addEventListener("click", convertFahrenheit);
-let selectedCelsius = document.querySelector("#celsius");
-selectedCelsius.addEventListener("click", convertCelsius);
 currentTime();
 search("Belgrade");
 let typed = document.querySelector("#searching");
