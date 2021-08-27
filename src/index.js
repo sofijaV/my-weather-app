@@ -48,9 +48,7 @@ function displayForecast(response) {
         `
                 <div class="col-2">
                 <div class="day">${formatDay(forecastDay.dt)}</div>
-                  <img src="http://openweathermap.org/img/wn/${
-                    forecastDay.weather[0].icon
-                  }@2x.png" />
+                  <img src="images/${forecastDay.weather[0].icon}.png" />
                  <span class="max">${Math.round(
                    forecastDay.temp.max
                  )}°</span>|<span class="min">${Math.round(
@@ -95,10 +93,7 @@ function showData(response) {
   let searchedWind = document.querySelector("#wind");
   searchedWind.innerHTML = `Wind speed: <span class="value">${windSpeed}m/s</span>`;
   let icon = document.querySelector("#icon");
-  icon.setAttribute(
-    "src",
-    ` http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
-  );
+  icon.setAttribute("src", ` images/${response.data.weather[0].icon}.png`);
   icon.setAttribute("alt", response.data.weather[0].description);
   getForecast(response.data.coord);
 }
