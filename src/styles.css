@@ -14,7 +14,6 @@ ul {
 h1 {
   font-size: 60px;
   margin-top: 20px;
-
   color: #ffdfc5;
 }
 p {
@@ -88,12 +87,6 @@ img {
   font-family: monospace;
   padding: 20px;
 }
-a {
-  text-decoration: none;
-}
-a:hover {
-  cursor: default;
-}
 
 main {
   background: #fff;
@@ -103,6 +96,7 @@ main {
 }
 .getLink {
   color: #ffdfc5;
+  text-decoration: none;
 }
 .getLink:hover {
   color: #474c5c;
