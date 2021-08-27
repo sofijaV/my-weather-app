@@ -72,6 +72,7 @@ p {
 }
 .days:hover {
   font-size: 32px;
+  background-color: #fffff0;
 }
 .max {
   color: #474c5c;
