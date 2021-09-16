@@ -63,7 +63,7 @@ p {
   text-align: center;
 }
 .days:hover {
-  font-size: 32px;
+  font-size: 30px;
   background-color: #fffff0;
   border: 1px solid rgba(71, 76, 92, 0.4);
   border-radius: 13px;
