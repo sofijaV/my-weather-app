@@ -119,4 +119,7 @@ img {
   button {
     margin-top: 5px;
   }
+  input {
+    margin-bottom: 3px;
+  }
 }
