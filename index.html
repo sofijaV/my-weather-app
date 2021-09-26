@@ -16,18 +16,19 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="src/styles.css" />
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="/src/styles.css" />
+    
     <title>Weather Forcast</title>
   </head>
   <body>
-      <div class="background">
+     
     <div class="container">
       <div class="document">
         <form class="searchingFor" id="searching">
           <div class="row">
           
-            <div class="col-md-3 text-center">
+            <div class="col-md-4 text-center">
               <input
                 type="text"
                 placeholder="Enter city name"
@@ -47,8 +48,7 @@
                 Search
               </button>
               </div>  
-          
-            <div class="col-md-6 text-center  ">
+            <div class="col-md-5 text-center  ">
               <button
                 id="location"
                 type="button"
@@ -60,8 +60,8 @@
             </div>
           </div>
         </form>
-
-        <main>
+<hr/>
+   
           <div class="row">
             <div class="col-7">
              
@@ -94,8 +94,6 @@
               </div>
             </div>
           </div>
-        </main>
-        </div>
         <div class="link">
           <a href="https://github.com/sofijaV/my-weather-app" class="getLink" target="_blank"
             >Open-source code</a

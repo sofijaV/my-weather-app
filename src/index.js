@@ -42,17 +42,17 @@ function displayForecast(response) {
   `;
   let forecast = response.data.daily;
   forecast.forEach(function (forecastDay, index) {
-    if (index < 7 && index !== 0) {
+    if (index < 5 && index !== 0) {
       forecastHTML =
         forecastHTML +
         `
-                <div class="col-md-2 text-center">
+                <div class="col-sm-3">
                 <div class="day">${formatDay(forecastDay.dt)}</div>
                   <img src="images/${forecastDay.weather[0].icon}.png
          " />
-                 <span class="max text-center">${Math.round(
+                 <span class="max">${Math.round(
                    forecastDay.temp.max
-                 )}°</span>|<span class="min text-center">${Math.round(
+                 )}°</span>|<span class="min">${Math.round(
           forecastDay.temp.min
         )}°</span>
                  </div>

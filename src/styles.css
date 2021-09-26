@@ -1,3 +1,8 @@
+body {
+  max-width: 600px;
+  margin: 20px auto;
+}
+
 .searchingFor {
   margin: 50px 0 20px;
 }
@@ -46,7 +51,9 @@ p {
 }
 .note {
   width: 200px;
+  height: auto;
   filter: brightness(105%) sepia(60%);
+  padding: 10px;
 }
 .date {
   text-align: left;
@@ -88,12 +95,6 @@ img {
   padding: 20px;
 }
 
-main {
-  background: #fff;
-  padding: 30px;
-  margin: 0 auto;
-  position: relative;
-}
 .getLink {
   color: #ffdfc5;
   text-decoration: none;
@@ -102,37 +103,20 @@ main {
   color: #474c5c;
 }
 .document {
-  max-width: 700px;
+  max-width: 600px;
   margin: 0 auto;
 }
-
-main,
-main::before,
-main::after {
-  /* Styles to distinguish sheets from one another */
-  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
-  border: 1px solid #bbb;
-}
-
-main::before,
-main::after {
-  content: "";
-  position: absolute;
-  height: 95%;
-  width: 99%;
-  background-color: #eee;
-}
-
-main::before {
-  right: 15px;
-  top: 0;
-  transform: rotate(-1deg);
-  z-index: -1;
-}
-
-main::after {
-  top: 5px;
-  right: -5px;
-  transform: rotate(1deg);
-  z-index: -2;
+@media (max-width: 767px) {
+  h1 {
+    font-size: 40px;
+  }
+  .note {
+    width: 180px;
+  }
+  .searched {
+    width: 70px;
+  }
+  button {
+    margin-top: 5px;
+  }
 }
