@@ -48,13 +48,14 @@ function displayForecast(response) {
         `
                 <div class="col-sm-3">
                 <div class="day">${formatDay(forecastDay.dt)}</div>
-                  <img src="images/${forecastDay.weather[0].icon}.png
-         " />
+                  <img src="images/${forecastDay.weather[0].icon}.png" />
+                  <div>
                  <span class="max">${Math.round(
                    forecastDay.temp.max
                  )}°</span>|<span class="min">${Math.round(
           forecastDay.temp.min
         )}°</span>
+                  </div> 
                  </div>
                 `;
     }
